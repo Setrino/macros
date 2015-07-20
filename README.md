@@ -17,6 +17,8 @@ Folder structure :
 
 Generate a file used for taking Debtor&Creditor aging analysis, adding a column for rates, calculating it, adding formatting to AmountTC, AmountDC, creating Pivot table For both EUR & USD. 
 
+Place credit&debit.xlsx file(s) in DailyBS folder.
+
 1. Go to the folder that contains the previous file for previous day, and get the first Worksheet that contains the previous Balance Sheet. The values for Inventory, Receivables, Payables is NOT changed in the new Worksheet. 
 2. Save the Workbook in the folder corresponding to the company.
 3. In Macros folder,add a folder called DailyBS which will contain the Credit/Debit worksheet(s) for companies (we do not put here the AEL one, cause we have a separate script for it). *Note: Naming of credit debit workbooks - the first 2 letters MUST correspond to folder names (e.g. BY, KZ) - this MUST be the first two letters of the name + wildcard.*
@@ -28,7 +30,7 @@ Generate a file used for taking Debtor&Creditor aging analysis, adding a column 
 
 Generate one large FX Balance Sheet, appending credit&debit.xlsx to main one.
 
-Place credit&debit.xlsx file inside the AEL folder.
+Place credit&debit.xlsx file in "AEL*" folder.
 
 *Note: Edit the code to change the folder name if needed*
 
