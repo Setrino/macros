@@ -4,18 +4,22 @@
 
 Folder structure :
 
-ASBIS\ (wildcard 2 letters of the file name)/year/FX\ Balance\ Sheet/month'15/File_Name.xlsx
-AEL/year/File_Name.xslx *Note: File_Name.xslx must contain month in format "mmm"*
-Macros/DailyBS/File_Name.xlsx
-Macros/script_name.xlsm
+**ASBIS\ (wildcard 2 letters of the file name)/year/FX\ Balance\ Sheet/month'15/File_Name.xlsx**</br>
 
-##dailyBS_Subs.xlsm
+**AEL/year/File_Name.xslx** 
+*Note: File_Name.xslx must contain month in format "mmm"*</br>
+
+**Macros/DailyBS/File_Name.xlsx**</br>
+
+**Macros/script_name.xlsm**</br>
+
+###dailyBS_Subs.xlsm
 
 Generate a file used for taking Debtor&Creditor aging analysis, adding a column for rates, calculating it, adding formatting to AmountTC, AmountDC, creating Pivot table For both EUR & USD. Then, we go to the folder that countains the previous file for previous day, and get the first Worksheet that contains the previous Balance Sheet. The values for Inventory, Receivables, Payables is NOT changed in the new Worksheet. The Macros then saves the Workbook in the folder corresponding to the company.
 
 Inside Macros folder we should also add a folder called DailyBS which will contain the Credit/Debit worksheet(s) for companies (we do not put here the AEL one, cause we have a separate script for it). Concerning naming of credit debit workbooks - the first 2 letters MUST correspond to folder names (e.g. BY, KZ) - this MUST be the first two letters of the name + wildcard.
 
-##balanceSheetMacrosAEL.xlsm
+###balanceSheetMacrosAEL.xlsm
 
 Place credit&debit.xlsx file inside the AEL folder.
 
