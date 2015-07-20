@@ -40,6 +40,6 @@ Place credit&debit.xlsx file in "AEL*" folder.
 4. Remove any Currency based on Column 5 which is non EUR.
 5. Filter Column 3 to show "N/A" only rows.
 6. Generate Pivot Table for worksheet 1 & 2.
-7. Save file File_Name + Date (dd mm yy)
+7. Save file File_Name + Date("dd mm yy")
 
 
